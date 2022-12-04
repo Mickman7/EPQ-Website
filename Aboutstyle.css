@@ -62,14 +62,18 @@ nav a {
     float: left;
     width: 40%;
 }
+.about{
+    /*padding-left: 20px;*/
+}
 .image-section{
     float: right;
     width: 60%;
+    padding-left: 15px;
 }
 .image-section img{
     width: 100%;
     height: auto;
-    border-radius: 8px;
+    border-radius: 7px;
 }
 .content-section .title{
     text-transform: uppercase;

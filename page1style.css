@@ -34,6 +34,10 @@ nav a:hover{
     color: #ddd;
     transition: 0.5s;
 }
+#navigation-bar{
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0;
+}
 
 
 /*Login button*/
@@ -91,7 +95,7 @@ nav a:hover{
 
 * {
     box-sizing: border-box
-}
+}/* the asterisk is used to set all elements to 0 margins in all browsers*/
 
 /* Slideshow container */
 .slideshow-container {
@@ -105,7 +109,23 @@ nav a:hover{
     display: none;
     margin: auto;
     overflow: hidden;
+    width: 100%;
+    height: 400px;
 }
+#image{
+    height: 400px;
+}
+.SlideImage1 {
+    width:100%;
+    height: 500px;
+}
+.SlideImage2{
+    width: 100%;
+}
+.SlideImage3{
+    width: 100%;
+}
+
 
     
 /* Next & previous buttons */
@@ -137,8 +157,9 @@ nav a:hover{
 
 /* Caption text */
 .text {
-    color: #ffff;
-    font-size: 15px;
+    font-family: arial;
+    color: rgb(161, 88, 172);
+    font-size: 25px;
     font-weight: bold;
     padding: 8px 12px;
     position: absolute;
@@ -150,7 +171,7 @@ nav a:hover{
 /* Number text (1/3 etc) */
 .numbertext {
     color: #f2f2f2;
-    font-size: 12px;
+    font-size: 18px;
     padding: 8px 12px;
     position: absolute;
     top: 0;
@@ -206,9 +227,7 @@ nav a:hover{
 .company-content {
     text-align: center;
     font-size: 30px;
-    padding-top: 80px;
     width: 100%;
-    justify-content: space-between;
 }
 
 .row {
@@ -225,7 +244,10 @@ nav a:hover{
 }
 
 .events .row {
-    margin: 50px 280px 50px;
+    margin: 10px 100px 10px;
+}
+#contImage{
+    height: 150px;
 }
 
 h4 {
@@ -259,7 +281,7 @@ p {
 
 @media screen and (min-width: 600px){
     .row {
-        flex-direction: column;
+        flex-direction: row;
     }
 
     .row .col {
